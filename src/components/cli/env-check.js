@@ -25,11 +25,11 @@ async function checkOpenAIEnvs () {
 
                 }
             );
-            readLineInterface._writeToOutput = function _writeToOutput(stringToWrite) {
-                if (readLineInterface.stdoutMuted)
-                    readLineInterface.output.write("*");
-                else
-                    readLineInterface.output.write(stringToWrite);
+            readLineInterface._writeToOutput = function _writeToOutput (stringToWrite) {
+
+                if (readLineInterface.stdoutMuted) readLineInterface.output.write("*");
+                else readLineInterface.output.write(stringToWrite);
+
             };
 
         });
