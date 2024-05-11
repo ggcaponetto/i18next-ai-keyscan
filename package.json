@@ -1,7 +1,7 @@
 {
-  "name": "ai18next",
+  "name": "i18next-ai-keyscan",
   "version": "1.0.0",
-  "description": "ai18next is an unofficial i18next key scanner that uses OpenAI. Scan your source code and extract the key/values into a JSON file.",
+  "description": "i18next-ai-keyscan is an unofficial i18next key scanner that uses OpenAI. Scan your source code and extract the key/values into a JSON file.",
   "main": "src/components/cli/index.js",
   "bin": {
     "ai18next": "src/components/cli/index.js"

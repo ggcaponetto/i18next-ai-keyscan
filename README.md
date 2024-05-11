@@ -1,4 +1,4 @@
-# ai18next
+# i18next-ai-keyscan
 
 ![Statements](https://img.shields.io/badge/statements-91.54%25-brightgreen.svg?style=flat)
 ![Branches](https://img.shields.io/badge/branches-93.93%25-brightgreen.svg?style=flat)
@@ -36,7 +36,7 @@ to
 ### Getting Started
 
 ````bash
-npm i -g ai18next
+npm i -g i18next-ai-keyscan
 
 # MacOS (optional)
 # export OPENAI_API_KEY='your-api-key-here'
@@ -51,17 +51,17 @@ cd /tmp && git clone https://github.com/locize/react-tutorial
 ````
 ````bash
 # Gets a cost prediction to process all files ending with .js in ``/tmp/react-tutorial``
-ai18next --target /tmp/react-tutorial --filter .*\.js$ --dry-run
+i18next-ai-keyscan --target /tmp/react-tutorial --filter .*\.js$ --dry-run
 
 # Scans all files ending with .js in ``/tmp/react-tutorial`` (absolute path)
-ai18next --target /tmp/react-tutorial --filter .*\.js$ --output /tmp/labels.json --chunk-length 12000 --verbose
+i18next-ai-keyscan --target /tmp/react-tutorial --filter .*\.js$ --output /tmp/labels.json --chunk-length 12000 --verbose
 
 # Scans all files ending with .js in ``./react-tutorial`` (relative path)
-ai18next --target ./react-tutorial --filter .*\.js$ --output ./labels.json --chunk-length 12000 --verbose
+i18next-ai-keyscan --target ./react-tutorial --filter .*\.js$ --output ./labels.json --chunk-length 12000 --verbose
 
 # Scans all files ending with .js in ``./react-tutorial`` (relative path) providing a custom prompt
 # Note: summary is the key selected key of the provided custom-prompts.json
-ai18next --target ./react-tutorial --filter .*\.js$ --output ./labels.json --chunk-length 12000 --verbose --prompts-file ./examples/custom-propmpts.json --prompt summary
+i18next-ai-keyscan --target ./react-tutorial --filter .*\.js$ --output ./labels.json --chunk-length 12000 --verbose --prompts-file ./examples/custom-propmpts.json --prompt summary
 ````
 
 #### Roadmap
