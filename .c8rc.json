@@ -1,0 +1,19 @@
+{
+  "all": true,
+  "extension": [
+    ".js",
+    ".mjs"
+  ],
+  "include": [
+    "src/**/*.js",
+    "src/**/*.mjs"
+  ],
+  "exclude": [
+    "src/components/cli/*"
+  ],
+  "reporter": [
+    "text",
+    "html",
+    "json-summary"
+  ]
+}

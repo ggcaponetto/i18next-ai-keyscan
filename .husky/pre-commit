@@ -1,0 +1,2 @@
+echo "Checking coding style, linting and test coverage."
+npm run eslint

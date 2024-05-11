@@ -1,0 +1,61 @@
+{
+  "name": "ai18next",
+  "version": "1.0.0",
+  "description": "ai18next is an unofficial i18next key scanner that uses OpenAI. Scan your source code and extract the key/values into a JSON file.",
+  "main": "src/components/cli/index.js",
+  "bin": {
+    "ai18next": "src/components/cli/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "--env-file=.env node src/main.js",
+    "docs": "jsdoc -r src/* -d docs",
+    "cy:open": "cypress open",
+    "eslint": "npx eslint src --fix",
+    "test-all-with-coverage-report": "c8 node --env-file=.env ./node_modules/mocha/bin/mocha --config .mocharc.cjs && npm run make-badges",
+    "test-all": "node --env-file=.env ./node_modules/mocha/bin/mocha --config .mocharc.cjs",
+    "test-processor": "node --env-file=.env ./node_modules/mocha/bin/mocha 'test/**/processor.test.mjs'",
+    "test-openai": "node --env-file=.env ./node_modules/mocha/bin/mocha 'test/**/openai.test.mjs'",
+    "make-badges": "istanbul-badges-readme",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "i18next",
+    "i18n",
+    "i18next-react",
+    "locize",
+    "translation",
+    "scanner",
+    "extraction",
+    "internationalization",
+    "localization",
+    "l10n",
+    "globalization"
+  ],
+  "author": "Giuseppe Giulio Caponetto",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.1.1",
+    "@stylistic/eslint-plugin": "^1.7.2",
+    "c8": "^9.1.0",
+    "chai": "^5.1.0",
+    "eslint": "^9.1.1",
+    "globals": "^15.1.0",
+    "husky": "^9.0.11",
+    "istanbul-badges-readme": "^1.9.0",
+    "jsdoc": "^4.0.2",
+    "mocha": "^10.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.2.10"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "js-tiktoken": "^1.0.11",
+    "loglevel": "^1.9.1",
+    "openai": "^4.39.0",
+    "simple-git": "^3.24.0",
+    "tiktoken": "^1.0.14",
+    "yargs": "^17.7.2"
+  }
+}
