@@ -51,15 +51,15 @@ let argv = yargs(hideBin(process.argv)).
         }
     ).
     option(
-        "propmpts-file",
+        "prompts-file",
         {
-            "describe": "Override the available OpenAI prompts providing the path to your own custom-propmpts.json file."
+            "describe": "Override the available OpenAI prompts providing the path to your own custom-prompts.json file."
         }
     ).
     option(
-        "propmpt",
+        "prompt",
         {
-            "describe": "The selected prompt from your custom-propmpts.json file. Alternatively choose one of the default templates.",
+            "describe": "The selected prompt from your custom-prompts.json file. Alternatively choose one of the default templates.",
             "choices": Object.keys(promptTemplates)
         }
     ).

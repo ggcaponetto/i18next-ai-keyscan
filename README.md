@@ -61,7 +61,7 @@ i18next-ai-keyscan --target ./react-tutorial --filter .*\.js$ --output ./labels.
 
 # Scans all files ending with .js in ``./react-tutorial`` (relative path) providing a custom prompt
 # Note: summary is the key selected key of the provided custom-prompts.json
-i18next-ai-keyscan --target ./react-tutorial --filter .*\.js$ --output ./labels.json --chunk-length 12000 --verbose --prompts-file ./examples/custom-propmpts.json --prompt summary
+i18next-ai-keyscan --target ./react-tutorial --filter .*\.js$ --output ./labels.json --chunk-length 12000 --verbose --prompts-file ./examples/custom-prompts.json --prompt summary
 ````
 
 #### Roadmap

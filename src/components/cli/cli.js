@@ -23,7 +23,7 @@ async function main (myArgv) {
     let model = myArgv.model || Object.keys(models)[0];
     let chunksLength = myArgv.chunkLength || 10000;
     let isFlatOutput = !(myArgv.flat === "false");
-    let propmptsFile = myArgv["prompts-file"];
+    let promptsFile = myArgv["prompts-file"];
     let promptsFilePath;
     let prompt = myArgv["prompt"] || Object.keys(prompts)[0];
     if (Object.keys(models).includes(model) === false) {
@@ -31,9 +31,9 @@ async function main (myArgv) {
         throw new Error(`The OpenAI model (${model}) is not supported.`);
 
     }
-    if (propmptsFile !== undefined && !path.isAbsolute(propmptsFile)) {
+    if (promptsFile !== undefined && !path.isAbsolute(promptsFile)) {
 
-        promptsFilePath = path.resolve(`${currentDirectory}/./${propmptsFile}`).toString();
+        promptsFilePath = path.resolve(`${currentDirectory}/./${promptsFile}`).toString();
 
     }
     if (promptsFilePath !== undefined) {
