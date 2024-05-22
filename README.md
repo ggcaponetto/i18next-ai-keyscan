@@ -13,12 +13,12 @@ Converts
 ````jsx
 // src/app.jsx
 function App(){
-    const [t] = useTransition();
+    const [t] = useTranslation();
     return (<div>t("main:title-"+"page")</div>);
 }
 // src/component/home.jsx
 function Home(){
-    const [t] = useTransition();
+    const [t] = useTranslation();
     const myTranlsation = t;
     return (<div>myTranlsation("home:welcome")</div>);
 }
